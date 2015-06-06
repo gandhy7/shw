@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
         
@@ -7,6 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Andia - Responsive Agency Template</title>
+
+        <link href="stylemenusoft.css" rel="stylesheet" type="text/css" />
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
@@ -82,6 +85,14 @@
 				</div>
 			</div>
 		</nav>
+
+
+
+       
+
+
+
+
         
         <!-- Page Title -->
         <div class="page-title-container">
@@ -96,9 +107,78 @@
             </div>
         </div>
 
-        <!-- Contact Us -->
-        <div class="contact-us-container">
-        	<div class="container">
+        <p>
+          <!-- Contact Us -->
+        </p>
+        <p>
+
+ <!--inicio otro menu-->
+
+<ul id="nav">
+    <li class="current"><a href="http://www.webdesignerwall.com">Inicio</a></li>
+    <li><a href="http://www.ndesign-studio.com">Información</a>
+        <ul>
+            <li><a href="http://www.ndesign-studio.com">Equipos</a>
+                <ul>
+                    <li><a href="http://www.ndesign-studio.com/portfolio">Hoja de vida</a></li>
+                    <li><a href="http://www.ndesign-studio.com/wp-themes">Asignaciónes</a></li>
+                    <li><a href="http://www.ndesign-studio.com/wallpapers">Inpecciones</a></li>
+                    <li><a href="http://www.ndesign-studio.com/tutorials">Reportes</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.webdesignerwall.com">permiso de alturas</a>
+                <ul>
+                    <li><a href="http://jobs.webdesignerwall.com">Design Job Wall</a></li>
+                </ul>
+            </li>
+            <li><a href="http://icondock.com">Empleado-Contratista</a></li>
+            <li><a href="http://bestwebgallery.com">Best Web Gallery</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Multi-Levels</a>
+        <ul>
+            <li><a href="#">Team</a>
+                <ul>
+                    <li><a href="#">Sub-Level Item</a></li>
+                    <li><a href="#">Sub-Level Item</a>
+                        <ul>
+                            <li><a href="#">Sub-Level Item</a></li>
+                            <li><a href="#">Sub-Level Item</a></li>
+                            <li><a href="#">Sub-Level Item</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">Sub-Level Item</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">Department</a>
+                <ul>
+                    <li><a href="#">Sub-Level Item</a></li>
+                    <li><a href="#">Sub-Level Item</a></li>
+                    <li><a href="#">Sub-Level Item</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>   
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Us</a></li>
+</ul>
+<p><a href="#"></a> <em>by</em> <a href="http://www.webdesignerwall.com">Menú para software especializado </a></p>
+
+
+<p>
+  
+  <!--fin otro menu -->
+  
+  
+  </p>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<div class="contact-us-container">
+   	<div class="container">
 	            <div class="row">
 	                <div class="col-sm-7 contact-form wow fadeInLeft">
 	                    <p>
@@ -108,7 +188,7 @@
 	                    <form role="form" action="SaveEmpleado.jsp" method="post">
                         
                     	  <div class="form-group">
-	                    		<label for="contact-name"><span style="color: #000000">Primer Nombre</span>: <a href="">* </a></label>
+	                    		<label for="contact-name"><span style="color: #2D04F9">Primer Nombre</span> <a href="">* </a></label>
 	                    		<input name="name" type="text" class="contact-name" id="contact-name" placeholder="Entre el primer nombre...">
                     	  </div>
                     	  <div class="form-group">
@@ -132,11 +212,11 @@
                           
                           
                           <div class="form-group">
-	                        	<p>
+	                        	
 	                        	  <label for="contact-subject">Dependencia / grupo de trabajo <a href="">* </a></label>
 	                        	  <input type="text" list=browsers name="ztrabajo" placeholder="Entre el grupo o dependencia de trabajo del empleado..." class="contact-subject" id="contact-subject">
 	                        	  
-                       	    </p>
+                       	  
 	                        	
                         	<datalist id=browsers >
                         	  <option> <span style="color: #2F2DE3">Remodelaciones Urbanas </span>   
@@ -157,16 +237,25 @@
    <label for="contact-subject">F. nacimiento <a href="">* </a></label>
                                 <input type="date" name="Fnacimiento"  class="contact-formpeque" id="contact-subject">
 
+                          </div>
+                          
+                          <div>
+                            <p>
+                              <input type="radio" name="group2" value="Empleado">
+                              <span class="contact-form">Empleado</span>
+                              <input type="radio" name="group2" value=" Contratista">
+                              Contratista
+                              <input type="radio" name="group2" value="otro">otro</p>
+                            <p>&nbsp; </p>
+                          </div>
 
-
-                           </div>
                           
                           
                           
                           
                           <div class="form-group">
 	                        	<label for="contact-message">Comentarios de  interés </label>
-	                        	<textarea name="message" placeholder="Your message..." class="contact-message" id="contact-message"></textarea>
+	                        	<textarea name="message" placeholder="Notas sobre el trabajador..." class="contact-message" id="contact-message"></textarea>
                           </div>
 	                        <button type="submit" class="btn">Enviar</button>
 	                    </form>

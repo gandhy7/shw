@@ -682,8 +682,10 @@ footer {
 }
 
 .contact-us-container p {
-    line-height: 28px;
-    font-size: 13px;
+	line-height: 28px;
+	font-size: 13px;
+	text-align: center;
+	color: #2D04F9;
 }
 
 .contact-form {
@@ -699,7 +701,7 @@ footer {
 	margin-bottom: 20px;
 }
 
-.contact-form input[type="text"] { width: 95%; height: 34px; }
+.contact-form input[type="text"] { width: 65%; height: 34px; }
 .contact-form textarea { width: 95%; height: 170px; padding-top: 6px; padding-bottom: 6px; }
 .contact-form label {
 	font-size: 13px;

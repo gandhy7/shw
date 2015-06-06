@@ -85,6 +85,7 @@ $(document).ready(function () {
    String RPpeso= request.getParameter("Ppeso");
    String RFnacimiento = request.getParameter("Fnacimiento");
    String Rmessage = request.getParameter("message");
+   String Rviculacion= request.getParameter("group2");
    
    
 ///capturo la fecha y la hora con la que se registra el evento o la actualizacion de datos
@@ -124,8 +125,9 @@ Statement Estamento = conexion.createStatement();
 
 
 
-String sql=("INSERT INTO empleados(pNombre, sNombre, pApellido, sApellido, dni, zonaTrabajo, altura, peso, fNacimiento, comentarios"
-        + ") VALUES (?,?,?,?,?,?,?,?,?,?)");
+String sql=("INSERT INTO empleados(pNombre, sNombre, pApellido, sApellido, dni, zonaTrabajo, "
+        + "altura, peso, fNacimiento, comentarios, vicunlacion"    
+        + ") VALUES (?,?,?,?,?,?,?,?,?,?,?)");
 
         
 
@@ -147,6 +149,7 @@ try {
             pst.setObject(8, RPpeso);
             pst.setObject(9, RFnacimiento);
             pst.setObject(10, Rmessage);
+            pst.setString(11, Rviculacion);
            
 
             
